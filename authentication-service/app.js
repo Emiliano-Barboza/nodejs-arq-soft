@@ -1,7 +1,7 @@
 const dotenv = require("dotenv")
 dotenv.config()
 
-const { BadRequestError, ConflictError} = require('./model/errors');
+const { BadRequestError, ConflictError} = require('common-models');
 const repository = require('auth-repository')
 const signService = require('authorization-service')
 const bcrypt = require('bcryptjs')

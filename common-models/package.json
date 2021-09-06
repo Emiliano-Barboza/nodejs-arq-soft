@@ -1,5 +1,5 @@
 {
-  "name": "authentication-service",
+  "name": "common-models",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -15,10 +15,7 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
     "dotenv": "^10.0.0",
-    "auth-repository": "file:../authentication-repository",
-    "authorization-service": "file:../authorization-service",
-    "common-models": "file:../common-models"
+    "jsonwebtoken": "^8.5.1"
   }
 }

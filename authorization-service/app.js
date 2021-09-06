@@ -16,7 +16,7 @@ const getToken = async (user) => {
     return token
 }
 
-const verifyToken = (req, res, next) => { // TODO: refactor code
+const verifyToken = async (req, res, next) => { // TODO: refactor code
     const token = req.body.token || req.query.token || req.headers["x-access-token"];
 
     if (!token) {
