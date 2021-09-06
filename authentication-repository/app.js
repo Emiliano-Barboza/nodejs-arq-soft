@@ -1,4 +1,9 @@
-const User = require("../model/user");
+const dotenv = require("dotenv")
+dotenv.config()
+
+const database = require("./config/database")
+database.connect()
+const User = require("./model/user");
 
 const getUserByEmail = async (email) => {
     const user = await User.findOne({ email });
@@ -21,3 +26,4 @@ module.exports = {
     addUser,
     getUserByEmail
 }
+

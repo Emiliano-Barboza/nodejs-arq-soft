@@ -1,11 +1,8 @@
 const dotenv = require("dotenv")
 dotenv.config()
 
-const database = require("./repository/config/database")
-database.connect()
-
 const express = require("express");
-const service = require("./service/authService");
+const service = require("auth-service");
 const app = express();
 
 app.use(express.json());

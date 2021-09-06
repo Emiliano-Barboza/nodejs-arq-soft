@@ -1,0 +1,23 @@
+{
+  "name": "authentication-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Barboza-Geymonat",
+  "license": "ISC",
+  "description": "Obligatorio de Arquitectura de Software",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "auth-repository": "file:../authentication-repository",
+    "authorization-service": "file:../authorization-service"
+  }
+}

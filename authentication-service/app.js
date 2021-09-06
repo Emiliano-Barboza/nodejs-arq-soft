@@ -1,6 +1,9 @@
-const { BadRequestError, ConflictError} = require('../model/errors');
-const repository = require('../repository/repository')
-const signService = require('./signService')
+const dotenv = require("dotenv")
+dotenv.config()
+
+const { BadRequestError, ConflictError} = require('./model/errors');
+const repository = require('auth-repository')
+const signService = require('authorization-service')
 const bcrypt = require('bcryptjs')
 
 const validateLogin = async (credentials) => {
